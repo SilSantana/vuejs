@@ -1,0 +1,97 @@
+/////Calendar Week /////
+<template>
+  <div id="calendar-week" class="container">
+    <!-- Markup for calendar week -->
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'CalendarWeek'
+}
+</script>
+
+<style lang="scss" scoped>
+#calendar-week {
+  /* SCSS for calendar week */
+}
+</style>
+
+
+///////// CALENDAR ENTRY /////////////
+<template>
+  <div id="calendar-entry">
+    <!-- Markup for calendar entry -->
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'CalendarEntry'
+}
+</script>
+
+<style lang="scss" scoped>
+#calendar-entry {
+  /* SCSS for calendar entry */
+}
+</style>
+
+//// CAlendar Event //////
+<template>
+  <div id="calendar-event">
+    <!-- Markup for calendar entry -->
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'CalendarEvent'
+}
+</script>
+
+<style lang="scss" scoped>
+#calendar-event {
+  /* SCSS for calendar event */
+}
+</style>
+
+
+
+////////////// CALENDAR DAY /////////////
+<template>
+  <div id="calendar-day">
+    <!-- Markup for calendar entry -->
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'CalendarDay'
+}
+</script>
+
+<style lang="scss" scoped>
+#calendar-day {
+  /* SCSS for calendar day */
+}
+</style>
+
+
+
+///////back ground color para o s events
+getEventBackgroundColor() {
+      const colors = ['#FF9999', '#85D6FF', '#99FF99'];
+      let randomColor = colors[Math.floor(Math.random() * colors.length)];
+      return `background-color: ${randomColor}`;
+    }
+
+
+
+////// para o edit event ////////
+<div v-if="event.edit">
+      <input type="text" :placeholder="event.details"/>
+      <div class="has-text-centered icons">
+        <i class="fa fa-check"></i>
+      </div>
+    </div>
