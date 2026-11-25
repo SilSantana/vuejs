@@ -3670,8 +3670,8 @@ http-proxy-agent@^5.0.0:
     debug "4"
 
 http-proxy-middleware@^2.0.3:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.7.tgz#915f236d92ae98ef48278a95dedf17e991936ec6"
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.12.tgz#8701838e1495d854fa1f77e368697da32349402d"
   dependencies:
     "@types/http-proxy" "^1.17.8"
     http-proxy "^1.18.1"
